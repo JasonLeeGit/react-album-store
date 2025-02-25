@@ -32,7 +32,7 @@ const App = () => {
         <div className="search">
           <input
             placeholder='Search for Albums'
-            value={searchTerm}findAlbumsByArtists
+            value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <img
