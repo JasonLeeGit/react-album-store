@@ -10,7 +10,7 @@ const AlbumCard = ({ album: { id, artistName, albumName, imagePath } }) => {
             </div>
 
             <div>
-                <img src={'src/images/'+imagePath !== "N/A" ? 'src/images/'+imagePath : "https://via.placeholder.com/400"} alt={artistName} />
+				<img src={'images'+imagePath !== "N/A" ? 'images'+imagePath : "https://via.placeholder.com/400"} alt={artistName} />
             </div>
 
             <div>
