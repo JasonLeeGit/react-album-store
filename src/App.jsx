@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { searchAlbums } from './services/api';
 
 import SearchIcon from './search.svg';
-import AlbumCard from './AlbumCard';
+import AlbumCard from './components/AlbumCard';
 import './App.css';
 
 const App = () => {
