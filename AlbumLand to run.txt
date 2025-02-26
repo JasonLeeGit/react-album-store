@@ -1,0 +1,18 @@
+Eclipse
+-------------------------------------------------------------------------
+In eclipse music.albums.react.app, start spring boot application running
+
+
+Visual Studio Code
+-------------------------------------------------------------------------
+to open this project in VSC (Visual Studio Code)
+
+in this directory open a command prompt/bash terminal and type code .
+
+this should open up the project in VSC
+
+Now in VSC 
+
+npm run dev -- --host
+
+goto http://localhost:5173/

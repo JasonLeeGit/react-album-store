@@ -1,8 +1,7 @@
 import React from 'react';
-
+// used to access props album fields once so no need to prefix with album.id etc
 const AlbumCard = ({ album: { id, artistName, albumName, imagePath } }) => {
     // return the html
-    console.log(imagePath)
     return (
         <div className="album" key={id}>
             <div>
@@ -10,7 +9,7 @@ const AlbumCard = ({ album: { id, artistName, albumName, imagePath } }) => {
             </div>
 
             <div>
-				<img src={'images'+imagePath !== "N/A" ? 'images'+imagePath : "https://via.placeholder.com/400"} alt={artistName} />
+				<img src={'images'+imagePath !== "imagesN/A" ? 'images'+imagePath : "https://placehold.in/300x200@2x.png/dark"} alt={artistName} />
             </div>
 
             <div>
