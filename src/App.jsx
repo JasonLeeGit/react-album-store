@@ -22,12 +22,12 @@ const App = () => {
       setSearchTerm(e.target.value)
       const response = await searchAlbums(searchTerm)
       setAlbums(response);
+
+      setSearchTerm("")
+      e.target.value = ""
     }
   }
-  const searchInputClear = (e) => {
-    setSearchTerm("")
-    e.target.value = ""
-  }
+
   // html to return
   return (
     //className is converted to class in the html
@@ -39,7 +39,6 @@ const App = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onKeyDown={(e) => handleKeyDown(e)}
-          onClick={(e) => searchInputClear(e)}
         />
         <img
           src={SearchIcon}
